@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>仿京东商城</title>
+    <script>
+       window.onload=function(){
+        alert("欢迎光临我的京东");
+       }
+    </script>
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+    .top{
+      width:100%;
+    }
+    .top img{
+      width:100%;
+    }
+  /*left*/
+    .left{
+      margin-top: 200px;
+      width: 120px;
+      height: 800px;
+      border:3px solid #666;
+      background-color:#666;
+      position:relative;
+    }
+    .left-list ul li a{
+      color:white;
+      font-size:13px;
+    }
+    .left-list-1{
+      width: 119px;
+      height: 80px;
+      margin:0 auto;
+    }
+    .left-list-1 .left-list-title{
+      width: 119px;
+      width: 20px;
+      background-color:#D32C26;
+      margin-left:5px;
+      text-align: center;
+    }
+    .left-list-1 .left-list-min-item{
+      padding-left:10px;
+      width: 115px;
+      height: 20px;
+      text-align: center;
+    }
+    .left-list-2{
+      width: 119px;
+      height: 80px;
+      margin:0 auto;
+      margin-top: 7px;
+      margin-left:5px;
+    }
+    .left-list-2 .left-list-title{
+      width: 115px;
+      width: 20px;
+      background-color:#EA3A9F;
+      text-align: center;
+    }
+    .left-list-2 .left-list-min-item{
+      padding-left:10px;
+      width: 115px;
+      height: 20px;
+      text-align: center;
+    }
+    .left-list-3{
+      width: 119px;
+      height: 80px;
+      margin:0 auto;
+      margin-top: 7px;
+      margin-left:5px;
+    }
+    .left-list-3 .left-list-title{
+      width: 115px;
+      width: 20px;
+      background-color:#E58D33;
+      text-align: center;
+    }
+    .left-list-3 .left-list-min-item{
+      padding-left:10px;
+      width: 115px;
+      height: 20px;
+      text-align: center;
+    }
+    .left-list-4{
+      width: 119px;
+      height: 80px;
+      margin:0 auto;
+      margin-top: 7px;
+      margin-left:5px;
+    }
+    .left-list-4 .left-list-title{
+      width: 115px;
+      width: 20px;
+      background-color:#6DC465;
+      text-align: center;
+    }
+    .left-list-4 .left-list-min-item{
+      padding-left:10px;
+      width: 115px;
+      height: 20px;
+      text-align: center;
+    }
+    .left-list-5{
+      width: 119px;
+      height: 80px;
+      margin:0 auto;
+      margin-top: 7px;
+      margin-left:5px;
+    }
+    .left-list-5 .left-list-title{
+      width: 115px;
+      width: 20px;
+      background-color:#A85FD9;
+      text-align: center;
+    }
+    .left-list-5 .left-list-min-item{
+      padding-left:10px;
+      width: 115px;
+      height: 20px;
+      text-align: center;
+    }
+    .left-list-6{
+      width: 119px;
+      height: 80px;
+      margin:0 auto;
+      margin-top: 7px;
+      margin-left:5px;
+    }
+    .left-list-6 .left-list-title{
+      width: 115px;
+      width: 20px;
+      background-color:#D32C26;
+      text-align: center;
+    }
+    .left-list-6 .left-list-min-item{
+      padding-left:10px;
+      width: 115px;
+      height: 20px;
+      text-align: center;
+    }
+    .left-list-7{
+      width: 119px;
+      height: 80px;
+      margin:0 auto;
+      margin-top: 7px;
+      margin-left:5px;
+    }
+    .left-list-7 .left-list-title{
+      width: 115px;
+      width: 20px;
+      background-color:#A85FD9;
+      text-align: center;
+    }
+    .left-list-7 .left-list-min-item{
+      padding-left:10px;
+      width: 115px;
+      height: 20px;
+      text-align: center;
+    }
+    .left-list-8{
+      width: 119px;
+      height: 80px;
+      margin:0 auto;
+      margin-top: 7px;
+      margin-left:5px;
+    }
+    .left-list-8 .left-list-title{
+      width: 115px;
+      width: 20px;
+      background-color:#4e63d4;
+      text-align: center;
+    }
+    .left-list-8 .left-list-min-item{
+      padding-left:10px;
+      width: 115px;
+      height: 20px;
+      text-align: center;
+    }
+  /*left end*/
+    /* header */
+        .header{
+          width:100%;
+          height:30px;
+          background-color:#eeeeee;
+          border-bottom:#ddd;
+
+        }
+        .header-left{
+            height: 31px;
+            line-height:30px;
+        }
+        .star{
+             display: inline-block;
+             background-image:url('images/iconlist_2.png');
+              background-position: -90px -23px;
+              /* x,y */
+             width: 13px;
+             height: 13px;
+        }
+        .header-right{
+           height: 31px;
+        }
+        .header-right>li{
+            float:left;
+            margin-right: 5px;
+            line-height:30px;
+        }
+        .vip{
+          display: inline-block;
+          background-image:url('images/vip.jpg');
+          width: 24px;
+          height: 11px;
+          vertical-align:middle;
+          margin-bottom:2px;
+          margin-right:3px;
+        }
+        .bjd{
+          display: inline-block;
+          background-image:url('images/dakehu.jpg');
+          width: 21px;
+          height: 11px;
+          vertical-align:middle;
+          margin-right:5px;
+        }
+        .phone{
+          display: inline-block;
+          background-image:url('images/iconlist_2.png');
+          background-position:-128px -360px;
+          width: 13px;
+          height: 22px;
+          vertical-align:middle;
+          margin-bottom:3px;
+          margin-right:3px;
+        }
+        .phone:hover{
+          background-position:-128px -399px;
+        }
+        .header-right .xia{
+          position:relative;
+          display: inline-block;
+          background-image:url('images/iconlist_2.png');
+          background-position:-94px -54px;
+          width: 9px;
+          height: 5px;
+          vertical-align:middle;
+          margin-left:3px;
+        }
+        .header-right .xia:hover{
+          background-position:-94px -45px;
+        }
+        .header-right .xia-list{
+          position:absolute;
+          border:1px solid #ddd;
+          text-align:center;
+          padding:0 5px;
+          border-top-width:0;
+          display:none;
+          background-color:#fff;
+        }
+        .header-right .arrow:hover .xia-list{
+          display: block;
+        }
+        .header-right>li:nth-child(even){
+          color:#eeeeee;
+        }
+    /* header end */
+    /* search */
+        .search{
+          width: 1211px;
+          height:80px;
+          border:1px solid white;
+          margin:0 auto;
+        }
+        .search .img{
+          width: 280px;
+          height: 60px;
+          float:left;
+        }
+        .search .sousuo{
+          width: 500px;
+          height: 80px;
+          margin-left:10px;
+        }
+        .search .sousuo #shuru{
+          width: 392px;
+          height: 35px;
+          border:2px solid #ee3233;
+          outline:none;
+          margin-top:13px;
+        }
+        .search .sousuo #an{
+         width: 83px;
+         height: 39px;
+         border:4px solid #ee3233;
+         background-color:#ee3233;
+         color:#fff;
+         margin-top:-1px;
+         outline:none;
+         vertical-align:middle;
+        }
+        .sousuo .sousuo-list{
+          width: 474px;
+          height: 45px;
+          color: #333;
+        }
+        .sousuo-list li{
+          float:left;
+          margin-right: 4.6px;
+          line-height:20px;
+          color: #999999;
+        }
+        .sousuo-list li a{
+          color: #999999;
+        }
+        .search-right{
+          width: 305px;
+          height: 60px;
+          margin-right: 98px;
+        }
+        .search-right-1,.search-right-2{
+          padding:5px 10px;
+          background-color: #f7f7f7;
+          border:1px solid #ddd;
+          margin-top:13px;
+          margin-left: 17px;
+        }
+        .search-right-1{
+          margin-left: 50px;
+        }
+        .search-right-1 .i1{
+          position:relative;
+          display: inline-block;
+          background-image:url('images/iconlist_2.png');
+          background-position:-121px -30px;
+          width: 20px;
+          height: 19px;
+          vertical-align:middle;
+          margin-top: -2px;
+          margin-right:4px;
+        }
+        .search-right-1:hover{
+          background-color: #fff;
+        }
+        .search-right-1:hover .i1{
+          background-position:-121px -60px;
+        }
+        .search-right-1 span{
+          display: inline-block;
+          border:4px solid;
+          border-color:#999 transparent transparent transparent;
+          vertical-align:middle;
+          margin-left:6px;
+        }
+        .search-right-2 .i1{
+          position:relative;
+          display: inline-block;
+          background-image:url('images/iconlist_2.png');
+          background-position:-121px -90px;
+          width: 21px;
+          height: 19px;
+          vertical-align:middle;
+          margin-right:4px;
+        }
+        .search-right-2:hover{
+          background-color: #fff;
+        }
+        .search-right-2:hover .i1{
+          background-position:-121px -120px;
+        }
+        .search-right-2 span{
+          display: inline-block;
+          width: 4px;
+          height: 4px;
+          border:1px solid;
+          border-color:#999 #999 transparent transparent;
+          transform:rotate(45deg);
+          vertical-align:middle;
+          margin-top:-2px;
+          margin-left:2px;
+        }
+    /* search end */
+    /* nav */
+        .nav{
+           width:1211px;
+           height:455px;
+           border:1px solid white;
+           margin:0 auto;
+        }
+        .nav .daohang-header{
+          width: 206px;
+          height: 43px;
+          border: 1px solid red;
+          background-color:#cc2223;
+        }
+        .nav .daohang-header a{
+          line-height: 2em;
+          color:white;
+          font-size:20px;
+          padding-left: 60px;
+        }
+        .nav .daohang-list{
+          width: 1001px;
+          height: 43px;
+          border:1px solid red;
+          background-color:#ee3233;
+        }
+        .nav .daohang-list li{
+          display: block;
+          float: left;
+          height: 43px;
+          width: 100px;
+          margin-left: 10px;
+          text-align: center;
+        }
+        .nav .daohang-list li:hover{
+          background-color:#cc2223;
+        }
+        .nav .daohang-list a{
+          color:white;
+          font-size:20px;
+          margin-left:50px;
+          margin:0 auto;
+          line-height: 2em;
+        }
+        .nav .daohang-header-wenzi{
+          border:1px solid red;
+          width: 206px;
+          height: 410px;
+        }
+        .nav .daohang-header-wenzi li{
+          display: inline;
+          float: left;
+        }
+        .nav .daohang-header-wenzi .wenzi{
+          width: 206px;
+          height: 70px;
+        }
+        .nav .daohang-header-wenzi a{
+          font-size: 15px;
+          padding-left: 20px;
+          line-height: 2em;
+        }
+        .nav .daohang-img{
+          width: 681px;
+          height: 410px;
+        }
+        .nav .daohang-img #i1{
+          width: 670px;
+          height: 240px;
+          padding-top: 5px;
+          padding-left: 5px;
+        }
+        .nav .daohang-img .i2{
+          width: 236px;
+          height: 164px;
+          border:1px solid #e1e1e1;
+          margin-left:5px;
+          margin-top:-4px;
+          position:relative;
+        }
+        .nav .daohang-img .i2 .i2-1{
+          display: inline-block;
+          background-image:url('images/ad-arraw.png');
+          width: 14px;
+          height: 24px;
+          vertical-align:middle;
+          background-position:-6px -5px;
+          margin-left: 12px;
+          margin-top: 62px;
+        }
+        .nav .daohang-img .i2 .i2-1:hover{
+          background-image:url('images/ad-arraw-hover.png');
+          width: 14px;
+          height: 24px;
+          vertical-align:middle;
+          background-position:-6px -5px;
+        }
+        .nav .daohang-img .i2 #i2-2{
+          float: right;
+          padding-top: 15px;
+          margin-right: 2px;
+        }
+        .nav .daohang-img .i2 img{
+          opacity:0.7;
+        }
+        .nav .daohang-img .i2 #zi1{
+          left: 51px;
+          top: 20px;
+          position:absolute;
+          color:#d778e8;
+        }
+        .nav .daohang-img .i3{
+          width: 202px;
+          height: 164px;
+          border:1px solid #e1e1e1;
+          margin-top:-4px;
+        }
+        .nav .daohang-img .i3 #i3-1{
+          width: 182px;
+          height: 139px;
+          margin-top:14px;
+          margin-left:8px;
+        }
+        .nav .daohang-img .i4{
+          width: 227px;
+          height: 164px;
+          border:1px solid #e1e1e1;
+          margin-right:5px;
+          margin-top:-4px;
+          position:relative;
+        }
+        .nav .daohang-img #i4-1{
+          margin-top:14px;
+          float: left;
+        }
+        .nav .daohang-img .i4 .i4-2{
+          display: inline-block;
+          background-image:url('images/ad-arraw.png');
+          width: 14px;
+          height: 24px;
+          vertical-align:middle;
+          background-position:-6px -42px;
+          margin-top: 70px;
+          margin-left:20px;
+        }
+        .nav .daohang-img .i4 .i4-2:hover{
+          background-image:url('images/ad-arraw-hover.png');
+          width: 14px;
+          height: 24px;
+          vertical-align:middle;
+          background-position:-6px -42px;
+        }
+        .nav .daohang-img .i4 #zi3{
+          left: 40px;
+          top: 20px;
+          position:absolute;
+          color:#d25c7b;
+        }
+        .nav .daohang-img .i4 img{
+          opacity:0.7;
+        }
+        .nav .daohang-right{
+          width: 320px;
+          height: 410px;
+        }
+        .nav .daohang-right img{
+          padding-top: 5px;
+          padding-left: 5px;
+        }
+        .bao{
+          font-size: 14px;
+          color:black;
+          padding-left: 5px;
+        }
+        .nav .daohang-right .daohang-right-2 .head a{
+          color:blue;
+          font-size: 14px;
+          float: right;
+        }
+        .nav .daohang-right .daohang-right-2 .list{
+          width: 308px;
+          height: 130px;
+          border:1px solid #999999;
+          border-top: 3px solid #999999;
+          margin-left: 5px;
+        }
+        .nav .daohang-right .daohang-right-2 .list li{
+          padding-top:7px;
+        }
+        .nav .daohang-right .daohang-right-2 .list a{
+          font-size: 13px;
+          line-height: 2em;
+        }
+        .nav .daohang-right .daohang-right-3{
+          width: 320px;
+          height: 172px;
+          margin-top:4px ;
+        }
+        .nav .daohang-right .daohang-right-3 ul{
+          display:block;
+          list-style-type: disc;
+        }
+        .nav .daohang-right .daohang-right-3 ul li{
+          float:left;
+        }
+        .nav .daohang-right .daohang-right-3 ul li a i img{
+          width:40px;
+          height: 40px;
+          margin-left:7px;
+          margin-top: 10px;
+        }
+        .nav .daohang-right .daohang-right-3 ul li a span{
+          display: block;
+          line-height: 25px;
+          margin-left:17px;
+        }
+    /* nav end */
+    /* content */
+        .content{
+           width:1211px;
+           height:430px;
+           border:1px solid white;
+           margin:0 auto;
+        }
+        .content-wenzi{
+          margin-left: 5px;
+          margin-top: 5px;
+        }
+        .content-wenzi span{
+          font-size: 18px;
+        }
+        .daimg{
+          width: 1211px;
+          height: 400px;
+        }
+        .daimg img{
+          width: 1211px;
+          height: 400px;
+        }
+    /* content end */
+    /* main */
+        .main{
+        	width:1211px;
+           height:1320px;
+           margin:0 auto;
+        }
+        .main .box1{
+          width: 1210px;
+          height: 58px;
+          border-bottom: 1px solid #aaaaaa;
+        }
+        .main .box1-lf{
+          padding-top: 17px;
+        }
+        .main .box1-lf .p1{
+          display: inline-block;
+          background-image:url('images/index_iconlist_01.png');
+          background-position: 0px 0px;
+              /* x,y */
+          width: 26px;
+          height: 32px;
+          margin-left: 10px;
+          padding-left: 5px;
+          margin-top:-1px;
+        }
+        .main .box1-lf .p1 span{
+          padding-top: 3px;
+          color:#fff;
+          font-size: 14px;
+        }
+        .main .box1-lf li{
+          display: block;
+          float: left;
+          margin-left:30px;
+        }
+        .main .box1-lf li a{
+          font-family: '黑体';
+          font-size: 14px;
+          line-height: 2em;
+        }
+        .main .box1-lf li #zi1{
+          font-size: 20px;
+          line-height: 1.4em;
+        }
+        .main .box1-rt p{
+          color:blue;
+          margin-top:35px ;
+          margin-left:10px;
+        }
+        .main .bigbox{
+          width: 1210px;
+          height: 367px;
+          border-bottom:1px solid #aaaaaa;
+        }
+        .main .bigbox .box2{
+          width: 211px;
+          height: 366px;
+          border-top:1px solid #aaaaaa;
+          float:left;
+        }
+        .main .bigbox .box2 .f{
+          width: 211px;
+          height: 226px;
+          margin-top:10px ;
+          line-height: 2em;
+        }
+        .main .bigbox .box2 .f .f1{
+          margin-left: 20px;
+        }
+        .main .bigbox .box2 .f .f2{
+          margin-right: 25px;
+        }
+        .main .bigbox .box2 .f img{
+          padding-top:20px;
+        }
+        .main .bigbox .box3,.box5,.box7,.box8,.box9,.box10,.box11{
+          width: 158px;
+          height: 183px;
+          border-left:1px solid #aaa;
+          border-top:1px solid #aaa;
+          text-align: center;
+          line-height: 1.5em;
+        }
+        .main .bigbox .box3 span,.box5 span,.box7 span,.box8 span,.box9 span,.box11 span{
+          color:red;
+        }
+        .main .bigbox .box4{
+          width: 476px;
+          height: 183px;
+          border-left:1px solid #aaa;
+          border-top:1px solid #aaa;
+        }
+        .main .bigbox .box5 img{
+          padding-top: 10px;
+        }
+        .main .bigbox .box6,.box12{
+          width: 200px;
+          height: 183px;
+          border-left:1px solid #aaa;
+          border-top:1px solid #aaa;
+        }
+        .main .bigbox .box6 img{
+          height: 32px;
+        }
+        .main .bigbox .box12 img{
+          width:200px;
+          height: 182px;
+        }
+        .main .bigbox .box8 img,.box9 img,.box10 img{
+          padding-top: 15px;
+        }
+    /* main end */
+    /* footer */
+        .footer{
+           width:1211px;
+           height:392px;
+           margin:0 auto;
+        }
+        .footer-top{
+          width: 1211px;
+          height: 192px;
+          border:1px solid;
+          border-color: #aaaaaa white;
+          margin: 0 auto;
+        }
+        .footer-top-1,.footer-top-2,.footer-top-3,.footer-top-4,.footer-top-5{
+          width: 163px;
+          height: 162px;
+          margin-left:70px;
+          margin-top:40px;
+        }
+        .footer-top-list1,.footer-top-list2,.footer-top-list3,.footer-top-list4,.footer-top-list5{
+          width: 122px;
+          height: 162px;
+          font-size: 13px;
+        }
+        .footer-top-1 .t1{
+          background-image:url('images/iconlist_2.png');
+          width: 40px;
+          height: 40px;
+          vertical-align:middle;
+          background-position:0px -55px;
+        }
+        .footer-top-2 .t2{
+          background-image:url('images/iconlist_2.png');
+          width: 40px;
+          height: 40px;
+          vertical-align:middle;
+          background-position:-50px -55px;
+        }
+        .footer-top-3 .t3{
+          background-image:url('images/iconlist_2.png');
+          width: 40px;
+          height: 40px;
+          vertical-align:middle;
+          background-position:0px -103px;
+        }
+        .footer-top-4 .t4{
+          background-image:url('images/iconlist_2.png');
+          width: 40px;
+          height: 40px;
+          vertical-align:middle;
+          background-position:-50px -103px;
+        }
+        .footer-top-5 .t5{
+          background-image:url('images/iconlist_2.png');
+          width: 40px;
+          height: 40px;
+          vertical-align:middle;
+          background-position:0px -150px;
+        }
+        .footer-xin{
+          width: 781px;
+          height: 199px;
+          margin: 0 auto;
+        }
+        .footer-xin-top{
+          text-align: center;
+          margin-top: 23px;
+        }
+        .footer-xin-zi{
+          text-align: center;
+          margin-top: 25px;
+        }
+        .footer-xin-down{
+          width: 513px;
+          height: 53px;
+          margin: 0 auto;
+          margin-top: 15px;
+        }
+        .footer-xin-down img{
+          padding-left:10px;
+        }
+    /* footer end */
+    </style>
+</head>
+<body>
+    <div class="header">
+      <div class="container clearfloat">
+          <div class="header-left lf"><a href=""><i class="star"></i>收藏京东</a></div>
+          <div class="header-right rt clearfloat">
+              <li>你好，欢迎来到京东！</li><li>|</li>
+              <li><a href="">[登录]</a></li><li>|</li>
+              <li><a href="">[注册]</a></li><li>|</li>
+              <li><a href="">我的订单</a></li><li>|</li>
+              <li><a href=""><i class="vip"></i>会员俱乐部</a></li><li>|</li>
+              <li><a href=""><i class="bjd"></i>企业频道</a></li><li>|</li>
+              <li><i class="phone"></i><a href="">手机京东</a></li><li>|</li>
+              <li class="arrow"><a href="">客户服务</a><i class="xia"></i>
+                <ul class="xia-list">
+                  <li><a href="">帮助中心</a></li>
+                  <li><a href="">售后服务</a></li>
+                  <li><a href="">在线客服</a></li>
+                  <li><a href="">投诉中心</a></li>
+                  <li><a href="">客服邮箱</a></li>
+                </ul>
+              </li><li>|</li>
+              <li><a href="">网址导航</a></li><li>|</li>
+          </div>
+      </div>
+    </div>
+     <div class="top"><img src="picture/datu.webp" alt="" /></div>
+    <div class="left lf">
+      <img src="picture/right1.jpg" alt="">
+      <div class="left-list">
+        <div class="left-list-1">
+           <ul>
+             <li class="left-list-title lf"><a href="">冲饮速食></a></li>
+             <li class="left-list-min-item"><a href="">IKV叉勺</a></li>
+             <li class="left-list-min-item"><a href="">坚果零食</a></li>
+             <li class="left-list-min-item"><a href="">京东生鲜</a></li>
+             <li class="left-list-min-item"><a href="">粽子专场</a></li>
+           </ul>
+        </div>
+        <div class="left-list-2">
+           <ul>
+             <li class="left-list-title lf"><a href="">全球时尚></a></li>
+             <li class="left-list-min-item"><a href="">进口保健</a></li>
+             <li class="left-list-min-item"><a href="">进口器械</a></li>
+             <li class="left-list-min-item"><a href="">进口居家</a></li>
+             <li class="left-list-min-item"><a href="">数码家电</a></li>
+           </ul>
+        </div>
+        <div class="left-list-3">
+           <ul>
+             <li class="left-list-title lf"><a href="">手机配件></a></li>
+             <li class="left-list-min-item"><a href="">手机好店</a></li>
+           </ul>
+        </div>
+        <div class="left-list-4">
+           <ul>
+             <li class="left-list-title lf"><a href="">珠宝饰品></a></li>
+             <li class="left-list-min-item"><a href="">建材爆品</a></li>
+             <li class="left-list-min-item"><a href="">品质童装</a></li>
+             <li class="left-list-min-item"><a href="">品质内衣</a></li>
+             <li class="left-list-min-item"><a href="">时尚箱包</a></li>
+           </ul>
+        </div>
+        <div class="left-list-5">
+           <ul>
+             <li class="left-list-title lf"><a href="">电视影音></a></li>
+             <li class="left-list-min-item"><a href="">小家电</a></li>
+             <li class="left-list-min-item"><a href="">厨卫电器</a></li>
+             <li class="left-list-min-item"><a href="">家电热销</a></li>
+             <li class="left-list-min-item"><a href="">创维电视</a></li>
+           </ul>
+        </div>
+        <div class="left-list-6">
+           <ul>
+             <li class="left-list-title lf"><a href="">慢病关爱></a></li>
+             <li class="left-list-min-item"><a href="">体验医美</a></li>
+             <li class="left-list-min-item"><a href="">营养保健</a></li>
+             <li class="left-list-min-item"><a href="">健康服务</a></li>
+             <li class="left-list-min-item"><a href="">京东健康</a></li>
+           </ul>
+        </div>
+        <div class="left-list-7">
+           <ul>
+             <li class="left-list-title lf"><a href="">智能数码></a></li>
+             <li class="left-list-min-item"><a href="">配件文具</a></li>
+             <li class="left-list-min-item"><a href="">电脑配件</a></li>
+             <li class="left-list-min-item"><a href="">电脑数码</a></li>
+             <li class="left-list-min-item"><a href="">电脑数码</a></li>
+           </ul>
+        </div>
+        <div class="left-list-8">
+           <ul>
+             <li class="left-list-title lf"><a href="">生活服务></a></li>
+             <li class="left-list-min-item"><a href="">汽车装饰</a></li>
+             <li class="left-list-min-item"><a href="">探索酒店</a></li>
+             <li class="left-list-min-item"><a href="">京东拍卖</a></li>
+             <li class="left-list-min-item"><a href="">京东家政</a></li>
+           </ul>
+        </div>
+      </div>
+    </div>
+    <div class="search clearfloat">
+      <div class="img">
+        <img src="picture/u=216928016,1944385729&fm=11&fmt=auto&gp=0.jpg" alt="" width="270px" height="60px">
+      </div>
+      <div class="sousuo lf">
+        <input type="text" name="" id="shuru" placeholder="  iphone8"/><input type="button" value="搜索" id="an"/>
+        <ul class="sousuo-list">
+          <li>热门搜索：</li>
+          <li><a href="">家纺11月大促</a></li>
+          <li><a href="">彩虹电热毯</a></li>
+          <li><a href="">博洋家纺</a></li>
+          <li><a href="">霞珍</a></li>
+          <li><a href="">床垫床褥</a></li>
+          <li><a href="">九州鹿被子</a></li>
+          <li><a href="">南极人家纺</a></li>
+        </ul>
+      </div>
+      <div class="search-right rt">
+        <div class="search-right-1 lf">
+          <i class="i1"></i>我的京东<span></span>
+        </div>
+        <div class="search-right-2 lf">
+          <i class="i1"></i>去购物车结算<span></span>
+        </div>
+      </div>
+    </div>
+    <div class="nav">
+      <div class="daohang-header lf"><a href="">全部商品</a></div>
+      <div class="daohang-list rt">
+        <li><a href="">首页</a></li>
+        <li><a href="">服装城</a></li>
+        <li><a href="">食品</a></li>
+        <li><a href="">团购</a></li>
+        <li><a href="">夺宝岛</a></li>
+        <li><a href="">闪购</a></li>
+        <li><a href="">金融</a></li>
+      </div>
+      <div class="daohang-header-wenzi lf">
+        <div class="wenzi">
+          <li><a href="">图片</a></li>
+          <li><a href="">音像</a></li>
+          <li><a href="">数字产品</a></li>
+          <li><a href="">家用电器</a></li>
+        </div>
+        <div class="wenzi">
+          <li><a href="">图片</a></li>
+          <li><a href="">音像</a></li>
+          <li><a href="">数字产品</a></li>
+          <li><a href="">家用电器</a></li>
+        </div>
+        <div class="wenzi">
+          <li><a href="">图片</a></li>
+          <li><a href="">音像</a></li>
+          <li><a href="">数字产品</a></li>
+          <li><a href="">家用电器</a></li>
+        </div>
+        <div class="wenzi">
+          <li><a href="">图片</a></li>
+          <li><a href="">音像</a></li>
+          <li><a href="">数字产品</a></li>
+          <li><a href="">家用电器</a></li>
+        </div>
+        <div class="wenzi">
+          <li><a href="">图片</a></li>
+          <li><a href="">音像</a></li>
+          <li><a href="">数字产品</a></li>
+          <li><a href="">家用电器</a></li>
+        </div>
+        <div class="wenzi">
+          <li><a href="">图片</a></li>
+          <li><a href="">音像</a></li>
+          <li><a href="">数字产品</a></li>
+          <li><a href="">家用电器</a></li>
+        </div>
+      </div>
+      <div class="daohang-img lf">
+          <img src="picture/002.webp" alt="" id="i1">
+          <div class="i2 lf"><i class="i2-1"></i><a href=""><img src="picture/5df6e27739f46327.jpg" alt="" id="i2-2" width="182px" height="139px"></a><div id="zi1"><h3>POPMART泡泡玛特</h3></div></div>
+          <div class="i3 lf"><a href=""><img src="picture/5e1dbe8f402f1aa8.jpg" alt="" id="i3-1" width="182px" height="139px"></a><div id="zi2"></div></div>
+          <div class="i4 lf"><a href=""><img src="picture/534968bb5fc11f47.jpg" alt="" id="i4-1" width="182px" height="139px"></a><div id="zi3"><h3>蒙牛 真果粒牛奶饮品</h3></div><i class="i4-2"></i></div>
+      </div>
+      <div class="daohang-right rt">
+          <img src="picture/7ac05e9cf354d874.jpg.webp" alt="" width="316px" height="72">
+          <div class="daohang-right-2">
+            <div class="head">
+              <span class="bao">京东快报</span><a href="">更多快报></a>
+            </div>
+            <div class="list">
+              <div class="list1 lf">
+                <li><a href="">618京东百亿补贴</a></li>
+                <li><a href="">零食区满199减100</a></li>
+                <li><a href="">家电区满999减30</a></li>
+                <li><a href="">彩妆区满1000减60</a></li>
+              </div>
+              <div class="list2 rt">
+                <li><a href="">好物限时秒</a></li>
+                <li><a href="">二手苹果笔记本电脑</a></li>
+                <li><a href="">预售爆款抢先定</a></li>
+                <li><a href="">华为智慧屏可通话</a></li>
+              </div>
+            </div>
+          </div>
+          <div class="daohang-right-3">
+            <ul>
+              <li><a class="x1"><i class="x-img1"><img src="tp/a1.png" alt=""></i><span class="x-txt">话费</span></a></li>
+              <li><a class="x2"><i class="x-img2"><img src="tp/b1.png" alt=""></i><span class="x-txt">机票</span></a></li>
+              <li><a class="x3"><i class="x-img3"><img src="tp/c1.png" alt=""></i><span class="x-txt">酒店</span></a></li>
+              <li><a class="x4"><i class="x-img4"><img src="tp/d1.png" alt=""></i><span class="x-txt">游戏</span></a></li>
+              <li><a class="x5"><i class="x-img5"><img src="tp/e1.png" alt=""></i><span class="x-txt">加油卡</span></a></li>
+              <li><a class="x6"><i class="x-img6"><img src="tp/f1.png" alt=""></i><span class="x-txt">火车票</span></a></li>
+              <li><a class="x7"><i class="x-img7"><img src="tp/g1.png" alt=""></i><span class="x-txt">众筹</span></a></li>
+              <li><a class="x8"><i class="x-img8"><img src="tp/h1.png" alt=""></i><span class="x-txt">理财</span></a></li>
+              <li><a class="x9"><i class="x-img9"><img src="tp/i1.png" alt=""></i><span class="x-txt">白条</span></a></li>
+              <li><a class="x10"><i class="x-img10"><img src="tp/j1.png" alt=""></i><span class="x-txt">电影票</span></a></li>
+              <li><a class="x11"><i class="x-img11"><img src="tp/k1.png" alt=""></i><span class="x-txt">企业购</span></a></li>
+              <li><a class="x12"><i class="x-img12"><img src="tp/l1.png" alt=""></i><span class="x-txt">礼品卡</span></a></li>
+            </ul>
+          </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="content-wenzi"><span>生活的橱窗</span>&nbsp&nbsp&nbsp&nbsp<i>每一天的精彩</i>
+      </div>
+      <div class="daimg"><a href=""><img src="picture/da.webp" alt=""></a></div>
+    </div>
+    <div class="main">
+      <div class="box1">
+        <div class="box1-lf lf">
+          <div class="p1 lf"><span>1F</span></div>
+          <li><a href="" id="zi1"><big>美食水果</big></a></li>
+          <li><a href="">特价商品</a></li>
+          <li><a href="">坚果</a></li>
+          <li><a href="">零食</a></li>
+          <li><a href="">生鲜</a></li>
+          <li><a href="">粽子专场</a></li>
+        </div>
+        <div class="box1-rt rt">
+          <p>大家电配送>>和合约计划说明>></p>
+        </div>
+      </div>
+      <div class="bigbox">
+        <div class="box2 lf">
+            <div class="f">
+              <div class="f1 lf">饮料</br>休闲食品</br>饼干蛋糕</br>坚果蜜饯</br>茗茶</br>营养冲调</br>进口零食</br>方便食品</div>
+              <div class="f2 rt">巧克力</br>棒棒糖</br>白茶</br>黑茶</br>粽子</br>山楂</br>乌龙茶</br>口香糖</div><img src="picture/010.jpg" alt="" width="200px" height="140px">
+            </div>
+        </div>
+        <div class="box3 lf"><img src="picture/011.jpg" alt="" width="100px" height="100px"><br>粒果无枝叶<br> 净重5.5斤 产地直采量贩装<br> <span>妃子笑新鲜荔枝</span></div>
+        <div class="box4 lf"><img src="picture/da1.webp" alt="" width="475px" height="182px"></div>
+        <div class="box5 lf"><img src="picture/012.jpg" alt="" width="100px" height="100px"><br>2粒装 单果1.25kg以上<br><span>西州蜜瓜哈密瓜</span></div>
+        <div class="box6 lf">
+        <img src="picture/logo_01.jpg" alt="">
+        <img src="picture/logo_02.jpg" alt="">
+        <img src="picture/logo_03.jpg" alt="">
+        <img src="picture/logo_04.jpg" alt="">
+        <img src="picture/logo_05.jpg" alt="">
+        <img src="picture/logo_06.jpg" alt="">
+        <img src="picture/logo_07.jpg" alt="">
+        <img src="picture/logo_08.jpg" alt="">
+        <img src="picture/logo_09.jpg" alt="">
+        <img src="picture/logo_10.gif" alt=""></div>
+        <div class="box7 lf"><img src="picture/013.jpg" alt="" width="100px" height="100px"><br>1.5kg装 单果150g以上<br><span>国产水蜜桃 </span></div>
+        <div class="box8 lf"><img src="picture/015.jpg" alt="" width="100px" height="100px"><br>国产车厘子新鲜水果<br><span>新鲜山东大樱桃3斤</span></div>
+        <div class="box9 lf"><img src="picture/da2.jpg" alt="" width="100px" height="100px"><br> 裹粉油炸半成品冷冻食品油炸食<br><span>黄金鸡柳香虾风味</span></div>
+        <div class="box10 lf"><img src="picture/da3.jpg" alt="" width="100px" height="100px"><br>即食鸡胸肉鲜冷冻<br>低脂健身轻食代餐健康</div>
+        <div class="box11 lf"><img src="picture/da4.jpg" alt="" width="100px" height="100px"><br>常温希腊风味酸牛奶<br><span>安慕希</span></div>
+        <div class="box12 lf"><img src="picture/da5.jpg" alt=""></div>
+      </div>
+      <div class="box1">
+        <div class="box1-lf lf">
+          <div class="p1 lf"><span>2F</span></div>
+          <li><a href="" id="zi1"><big>家用电器</big></a></li>
+          <li><a href="">特色彩电</a></li>
+          <li><a href="">大家电</a></li>
+          <li><a href="">小家电</a></li>
+          <li><a href="">手机通讯</a></li>
+          <li><a href="">汽车五金</a></li>
+        </div>
+        <div class="box1-rt rt">
+          <p>大家电配送>>和合约计划说明>></p>
+        </div>
+      </div>
+      <div class="bigbox">
+        <div class="box2 lf">
+            <div class="f">
+              <div class="f1 lf">手机</br>手机配件</br>话费补贴</br>生活电器</br>厨房电器</br>个护健康</br>五金家装</br>冰柜/冰吧</div>
+              <div class="f2 rt">空调</br>平板电视</br>冰箱</br>洗衣机</br>热水器</br>烟机/烟灶</br>家庭影院</br>汽车用品</div>
+              <div class="fl"><img src="picture/fl_01.jpg" alt=""></div>
+            </div>
+        </div>
+        <div class="box3 lf"><img src="picture/fl_dl_01.jpg" alt=""><br>48英寸智能电视2499<br>55英寸智能电视3499<br><span>送澳门风云2电影票</span></div>
+        <div class="box4 lf"><img src="picture/u=1016992558,524077736&fm=26&fmt=auto&gp=0.jpg" alt="" width="475px" height="182px"></div>
+        <div class="box5 lf"><img src="picture/fl_dl_02.jpg" alt=""><br>moto新品首发<br><span>2月5日10:30抢</span></div>
+        <div class="box6 lf">
+        <img src="picture/logo_01.jpg" alt="">
+        <img src="picture/logo_02.jpg" alt="">
+        <img src="picture/logo_03.jpg" alt="">
+        <img src="picture/logo_04.jpg" alt="">
+        <img src="picture/logo_05.jpg" alt="">
+        <img src="picture/logo_06.jpg" alt="">
+        <img src="picture/logo_07.jpg" alt="">
+        <img src="picture/logo_08.jpg" alt="">
+        <img src="picture/logo_09.jpg" alt="">
+        <img src="picture/logo_10.gif" alt=""></div>
+        <div class="box7 lf"><img src="picture/fl_dl_03.jpg" alt=""><br>小家电--加一元即享受买一赠一<br><span>另有疯狂加价购</span></div>
+        <div class="box8 lf"><img src="picture/fl_dl_04.jpg" alt=""><br>大神X7现货开抢！<br><span>¥1699.00</span></div>
+        <div class="box9 lf"><img src="picture/fl_dl_05.jpg" alt=""><br>大家电-年前收货！全场狂降<br><span>7kg洗衣机998元秒杀</span></div>
+        <div class="box10 lf"><img src="picture/fl_dl_06.jpg" alt=""><br>这就是范儿！有范儿才有未来!</div>
+        <div class="box11 lf"><img src="picture/fl_dl_07.jpg" alt=""><br>回家路上，车品护航<br><span>年底大放血</span></div>
+        <div class="box12 lf"><img src="picture/fl_ad_02.jpg" alt=""></div>
+      </div>
+      <div class="box1">
+        <div class="box1-lf lf">
+          <div class="p1 lf"><span>3F</span></div>
+          <li><a href="" id="zi1"><big>彩妆美妆</big></a></li>
+          <li><a href="">特价商品</a></li>
+          <li><a href="">神仙水</a></li>
+          <li><a href="">MAC口红</a></li>
+          <li><a href="">阿玛尼唇釉</a></li>
+          <li><a href="">大牌气垫</a></li>
+        </div>
+        <div class="box1-rt rt">
+          <p>大家电配送>>和合约计划说明>></p>
+        </div>
+      </div>
+      <div class="bigbox">
+        <div class="box2 lf">
+            <div class="f">
+              <div class="f1 lf">精选品牌</br>SKII</br>玉兰油</br>美宝莲</br>一叶子</br>雅诗兰黛</br>御泥坊</br>林清轩</div>
+              <div class="f2 rt">新锐品牌</br>科莱丽</br>小迷糊</br>美康粉黛</br>欧莱雅</br>欧诗漫</br>露兰姬娜</br>橘朵</div>
+              <div class="fl"><img src="picture/dada2.webp" alt="" width="200px" height="140px"></div>
+            </div>
+        </div>
+        <div class="box3 lf"><img src="picture/dada9.jpg" alt="" width="100px" height="100px"><br>山谷百合香体喷雾<br>自然干爽男女留香 <br><span>名创优品（MINISO）香水</span></div>
+        <div class="box4 lf"><img src="picture/dada.webp" alt="" width="475px" height="182px"></div>
+        <div class="box5 lf"><img src="picture/dada4.jpg" alt="" width="100px" height="100px"><br>氨基酸洗面奶女男士泡沫洁面乳<br><span>肌肤之食</span></div>
+        <div class="box6 lf">
+        <img src="picture/logo_01.jpg" alt="">
+        <img src="picture/logo_02.jpg" alt="">
+        <img src="picture/logo_03.jpg" alt="">
+        <img src="picture/logo_04.jpg" alt="">
+        <img src="picture/logo_05.jpg" alt="">
+        <img src="picture/logo_06.jpg" alt="">
+        <img src="picture/logo_07.jpg" alt="">
+        <img src="picture/logo_08.jpg" alt="">
+        <img src="picture/logo_09.jpg" alt="">
+        <img src="picture/logo_10.gif" alt=""></div>
+        <div class="box7 lf"><img src="picture/dada6.jpg" alt="" width="100px" height="100px"><br>至美番茄红 红管唇釉<br><span>阿玛尼（ARMANI）臻致丝绒哑光唇釉</span></div>
+        <div class="box8 lf"><img src="picture/dada7.jpg" alt="" width="100px" height="100px"><br>【经典热门色】602#小辣椒CHILI<br><span>魅可MAC口红</span></div>
+        <div class="box9 lf"><img src="picture/dada、.jpg" alt="" width="100px" height="100px"><br>3片海葡萄+冰钻+芍药<br><span>Fan Beauty Secret 一周面膜体验装</span></div>
+        <div class="box10 lf"><img src="picture/dada4.jpg" alt="" width="100px" height="100px"><br>古龙香水男士<br>花之物语蔚蓝男士香水</div>
+        <div class="box11 lf"><img src="picture/dada8.jpg" alt="" width="100px" height="100px"><br>思埠黛莱美无瑕水光气垫<br><span>黛莱美（DaiLaiMei） </span></div>
+        <div class="box12 lf"><img src="picture/dada1.jpg" alt=""></div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-top">
+        <div class="footer-top-1 lf">
+          <div class="t1 lf"></div>
+          <div class="footer-top-list1 lf">
+            <li><big>购物指南</big></li>
+            <li><a href="">购物流程</a></li>
+            <li><a href="">会员介绍</a></li>
+            <li><a href="">团购/机票</a></li>
+            <li><a href="">常见问题</a></li>
+            <li><a href="">大家电</a></li>
+            <li><a href="">练习客服</a></li>
+          </div>
+        </div>
+        <div class="footer-top-2 lf">
+          <div class="t2 lf"></div>
+          <div class="footer-top-list2 lf">
+            <li><big>配送方式</big></li>
+            <li><a href="">上门自提</a></li>
+            <li><a href="">211限时达</a></li>
+            <li><a href="">配送服务查询</a></li>
+            <li><a href="">配送费收取标准</a></li>
+            <li><a href="">海外配送</a></li>
+          </div>
+        </div>
+        <div class="footer-top-3 lf">
+          <div class="t3 lf"></div>
+          <div class="footer-top-list3 lf">
+            <li><big>支付方式</big></li>
+            <li><a href="">货到付款</a></li>
+            <li><a href="">在线支付</a></li>
+            <li><a href="">分期付款</a></li>
+            <li><a href="">邮局汇款</a></li>
+            <li><a href="">公司转账</a></li>
+          </div>
+        </div>
+        <div class="footer-top-4 lf">
+          <div class="t4 lf"></div>
+          <div class="footer-top-list4 lf">
+            <li><big>售后服务</big></li>
+            <li><a href="">售后政策</a></li>
+            <li><a href="">价格保护</a></li>
+            <li><a href="">退款说明</a></li>
+            <li><a href="">返修/退换货</a></li>
+            <li><a href="">取消订单</a></li>
+          </div>
+        </div>
+        <div class="footer-top-5 lf">
+          <div class="t5 lf"></div>
+          <div class="footer-top-list5 lf">
+            <li><big>特色服务</big></li>
+            <li><a href="">夺宝岛</a></li>
+            <li><a href="">DIV装机</a></li>
+            <li><a href="">延保服务</a></li>
+            <li><a href="">京东E卡</a></li>
+            <li><a href="">节能补贴</a></li>
+            <li><a href="">京东通讯</a></li>
+          </div>
+        </div>
+      </div>
+      <div class="footer-xin">
+        <div class="footer-xin-top">
+          <a href="">关于我们&nbsp&nbsp</a>|
+          <a href="">联系我们&nbsp&nbsp</a>|
+          <a href="">人才招聘&nbsp&nbsp</a>|
+          <a href="">商家入驻&nbsp&nbsp</a>|
+          <a href="">广告服务&nbsp&nbsp</a>|
+          <a href="">手机京东&nbsp&nbsp</a>|
+          <a href="">友情链接&nbsp&nbsp</a>|
+          <a href="">关于我们&nbsp&nbsp</a>|
+          <a href="">京东社区&nbsp&nbsp</a>|
+          <a href="">京东公益</a>
+        </div>
+        <div class="footer-xin-zi">
+          <span>北京市公安局朝阳分局备案编号1100105014669&nbsp&nbsp|&nbsp&nbsp京ICP证070359号&nbsp&nbsp|&nbsp&nbsp互联网药品信息服务资格证编号（京）-非经营性-2011-0034</span>
+          <span>音像制品经营许可证苏宿批005号&nbsp&nbsp|&nbsp&nbsp出版物经营许可证编号新出发（苏）批字第N-012号&nbsp&nbsp|&nbsp&nbsp互联网出版许可证编号新出网证（京）字150号</span>
+          <span>网络文化经营许可证京网文[2011]0168-061号&nbsp&nbspCopyright&nbsp&nbsp©&nbsp&nbsp2004-2014&nbsp&nbsp京东JD.com&nbsp&nbsp版权所有</span>
+          <span>京东旗下网站：&nbsp&nbspEnglish&nbsp&nbspSite&nbsp&nbsp拍拍网&nbsp&nbsp网银在线</span>
+        </div>
+        <div class="footer-xin-down">
+          <img src="picture/cx.jpg" alt="" class="lf">
+          <img src="picture/cy.jpg" alt="" class="lf">
+          <img src="picture/jy.jpg" alt="" class="lf">
+          <img src="picture/kx.jpg" alt="" class="lf">
+        </div>
+      </div>
+    </div>
+</body>
+</html>
